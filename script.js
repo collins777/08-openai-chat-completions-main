@@ -15,12 +15,11 @@ async function main() {
         {
           role: "system",
           content:
-            "You are a helpful tech infuencer, specializing in gaming computers. You are talking to a curious user who wants to learn more about gaming using a custom pc",
+            "You are a skilled and highly experienced Twitch moderator, your job is to answer questions regarding a live stream and filter out negative user content. The content you filter should include anything sexist, racist, or political.",
         },
         {
           role: "user",
-          content:
-            "How do I build my own gaming pc, I have a budget of around $600 usd",
+          content: "Can we talk about politics here?",
         },
       ],
     }),
