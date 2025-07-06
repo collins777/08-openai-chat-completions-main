@@ -12,7 +12,16 @@ async function main() {
     body: JSON.stringify({
       model: "gpt-4o",
       messages: [
-        { role: "user", content: "Tell me fun fact about gaming computers" },
+        {
+          role: "system",
+          content:
+            "You are a helpful tech infuencer, specializing in gaming computers. You are talking to a curious user who wants to learn more about gaming using a custom pc",
+        },
+        {
+          role: "user",
+          content:
+            "How do I build my own gaming pc, I have a budget of around $600 usd",
+        },
       ],
     }),
   });
